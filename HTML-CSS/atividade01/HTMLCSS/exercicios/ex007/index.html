@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Criando links externos</h1>
+    <a href="https://github.com/juolive1997">Meu perfil no Github</a>
+
+    <h2>Identificando o idioma do site</h2>
+    <a href="https://www.w3.org/TR/2014/REC-html5-20141028/obsolete.html"hreflang="en">Tags Obsoletas (em ingles)</a>
+
+    <h2>Abrindo links em novas guias</h2>
+    <p>O parametro target define o comportamento do link que o usuário vai abrir. Entre os possiveis valores temos:
+        <ul>
+            <li>_blank: vai abrir o link em uma nova janela em branco</li>
+            <li>_self: vai abrir o link na janela atual (padrão)</li>
+            <li>_top: vai desfazer todos os frames e abrir no navegador completo</li>
+            <li>parent: similiar ao _top</li>
+            <li>nome-do-frame: caso esteja usando frames,indicar o nome da janela a abrir.</li>
+        </ul>
+    </p>
+    <a href="https://www.linkedIn.com/in/juolive1997/" target="_blank">Acesse meu linkedIn</a>
+
+    <h2>Esse link é seu?</h2>
+    <p>Podemos indicar a natureza do destino do link utilizando o parâmetro rel que aceita os seguintes valores:</p>
+    <ul>
+        <li>next: indica que o link é a próxima parte do documento atual.</li>
+        <li>prev: indica que o link é a parte anterior do documento atual.</li>
+        <li>author: indica que um link para o site do autor do artigo atual.</li>
+        <li>extremal: indica que um link para outro site que não faz parte do site atual.</li>
+        <li>nofollow: indica que um link para um site não endossado,como um link pago.</li>
+    </ul>
+</p>
+<a href="pagina1.html" target="_self"rel="next">Página 1</a>
+
+<p>Voce tambem pode acessar a nossa <a href="noticias/pagina2.html" target="_self" rel="next">pagina de noticias</a></p>
+
+<h2>Donwloads</h2>
+<p>Podemos adicionar arquivos para download</p>
+<a href="downloads/4.Objetos de exibição.pdf" download="4.Objetos de exibição.pdf"type="application/pdf">Baixe o ppt da aula aqui</a>
+</body>
+</html>

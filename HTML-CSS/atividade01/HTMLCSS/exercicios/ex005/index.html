@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação semantica</title>
+</head>
+<body>
+    <h1>Exemplo de semântica</h1>
+
+    <h2>Endereço</h2>
+    <p>Anteriormente para dar enfase em um endereço, usávamos a tag u. <br> Ex: Eu moro na <u>Avenida X, 130</u></p>
+    
+    <p>Já na HTML5 semântica,utilizamos a tag address. <br>Ex: Eu moro na <address>Avenida X,130</address></p>
+
+    <h2>Negrito/Destaque</h2>
+    <p>Quando quisermos um <b>texto em negrito </b> utilizávamos a tag B (não semântica).</p>
+
+    <p>Já quando tivermos um <strong> termo em destaque </strong> utilizávamos a tag strong (semântica).</p>
+
+    <h2>Itálico/ênfase</h2>
+
+    <p>Nesta frase, temos um <i>termo em itálico</i> com a tag I (não semântica)</p>
+
+    <p>Nesta frase, temos um <em>termo em itálico</em> com a tag EM (semântica)</p>
+
+    <h2>Texto marcado</h2>
+
+    <p>Podemos criar também <mark>um texto marcado</mark> utilizando a tag MARK.</p>
+    <p>E no outro parágrafo, <mark style="background-color: darkmagenta;">outro texto marcado.</mark></p>
+
+    <h2>Texto grande e pequeno</h2>
+
+    <p>Estamos criando um <big>um texto grande</big> e <small>um texto pequeno</small>utilizando as tags big e small.</p>
+
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluido</del>para indicar que ele deve ser lido,mas não considerado.</p>
+
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar um texto<ins>como inserido</ins>para dar ênfase e indicar que ele foi adicionado depois.</p>
+
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3,usamos a tag sup.</p>
+
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>0,utilizamos a tag sub.</p>
+
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.getElementById ('teste')</code>é escrito em linguagem JavaScript.</p>
+
+    <h3>Pré formatação</h3>
+    <pre>
+        <code>
+            local function novo ()
+                if 0 == 2 then
+                    display.remove ()
+                else
+                    morto = true
+                end
+            end
+        </code>
+    </pre>
+
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo meu: <q>o computador é um burro muito rápito</q>.</p>
+
+    <h3>Citações completas</h3>
+    <p>Segundo Maurício Samy Silva no seu livro Fundamentos de HTML5 e CSS3:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover"></blockquote>
+    HTML é a sigla em inglês para HyperText Markup Language,que,em português,significa linguagem para marcação de hipertexto.
+    </blocquote>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML </abbr> e <abbr title= "Cascading Style Sheets">CSS</abbr>.</p>
+
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Esse texto está invertido</bdo></p>
+</body>
+</html>
