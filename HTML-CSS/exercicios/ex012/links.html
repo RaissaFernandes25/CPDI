@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+        color:red;
+        text-decoration: none; /* remove o sublinhado do link */
+        font-weight: bold; /*negrito */
+    }
+    a:visited{
+        color:darkmagenta;
+    }
+
+    #aula:visited{ /*endereço já visitado*/
+        color:green;
+    }
+    a:hover{ /*ao passar o mouse*/
+        color:black;
+        text-decoration: underline;
+    }
+    a:active{ /* Ao clicar*/
+        color:yellow;
+    }
+    a::after{
+        content:' [link]';
+        text-decoration: none;
+        font-weight: normal;
+        color: darkgray;
+    }
+</style>
+</head>
+<body>
+    
+    <h1>Seletores personalizados</h1>    
+    <p># id <br>
+        . class <br>
+        : pseudo-class <br>
+        :: pseudo-element <br>
+        > children </p>
+    
+    <h1>Personalizando links</h1>
+    
+    <ul>
+        <li> <a href="https://www.linkedin.com/in/raissabatista25011989/?locale=pt_BR">Perfil do linkedIn</a></li>
+        <li> <a href="https://drive.google.com/drive/folders/1rk8Pxdo-z5LKk0Ny3mgkq6LiGWRvN38Z">Drive da turma</a></li>
+        <li> <a href="https://youtu.be/3nQWTZhmPgM">Link da última aula</a></li>
+
+    </ul>    
+</body>
+</html>
