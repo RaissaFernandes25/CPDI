@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Sombras</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: #525252;
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.692);
+            /* sombra: deslocamento horizontal (o quanto a sombra vai andar para a direita, negativo para a esquerda), deslocamento vertical (o quanto a sombra vai andar para a baixo, negativo para cima), blur (espalhamento), cor */
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: #b4b3b3;
+            padding: 5px;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+   <!-- Cabeçalho -->
+   <header>
+    <h1>Meu site</h1>
+    <nav> <!-- determina que existem links de navegação pelo site-->
+        <a href="#">Home</a>
+        <a href="#">Sobre nós</a>
+        <a href="#">Contato</a>
+        <a href="#">Catálogo</a>
+    </nav>
+</header>    
+<main>  <!--determina o conteúdo principal do site-->
+    <section id="assuntos">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, tempore sequi rerum aliquam sit accusamus eius reprehenderit eaque modi rem repellendus nisi consequatur dolores incidunt ab cum harum. Veritatis, perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci in exercitationem accusantium aliquid voluptatum veritatis? Blanditiis sapiente in, sunt nesciunt voluptas iste quam dicta ipsa ad quo ea cumque velit!</p>
+    </section>
+    <section id="noticias">
+        <article> <!--Conteúdo que pode ser lido de forma independente-->
+            <h2>Notícias sobre técnologia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsa perspiciatis error eius, magnam quidem atque nihil repellat, repellendus hic voluptate nostrum iusto accusantium excepturi aliquam odio! Temporibus, maxime cupiditate?</p>
+            <aside>
+                <p>Conteúdo relativo ao artigo como por ex o autor</p>
+            </aside>
+        </article>
+    </section>
+</main>
+<footer>
+    <p>Desenvolvido por Raissa Batista</p>
+</footer>
+
+    <a href="index.html">inicio</a>
+</body>
+</html>

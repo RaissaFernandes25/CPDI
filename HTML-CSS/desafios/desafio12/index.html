@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Bob esponja</title>
+    <!-- baixar a imagem de fundo do bob esponja com as casas e colocar os personagens na frente de sua casa -->
+    <style>
+        
+        #conteudo {
+        background-color: rgb(5, 42, 117);
+        background-image: url(imagens/cenario.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding: 100px;
+        margin: 100px 100px ; 
+        max-width: 400px;
+        text-align: center;
+        height: 400px;
+        max-width: 90%;
+        font-size: larger; 
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .bob:after {
+        content: "";
+        background: url('imagens/bobesponja.png') center center no-repeat;
+        background-size: 100px;
+        position: absolute;
+        top: 200px;
+        left: 470px;
+        right: 0;
+        bottom: 0;
+        border-radius: 20px;
+        }
+
+        .siriqueijo:after {
+        content: "";
+        background: url('imagens/siriqueijo.png') center center no-repeat;
+        background-size: 110px;
+        position: absolute;
+        top: 150px;
+        left: 0px;
+        right: 0;
+        bottom: 0;
+        border-radius: 20px;
+        }
+
+        .patrick:after {
+        content: "";
+        background: url('imagens/patrick.png') center center no-repeat; 
+        background-size: 100px;
+        position: absolute;
+        top: 150px;
+        left: -550px;
+        right: 0;
+        bottom: 0;
+        border-radius: 20px;
+        }
+
+        .lula:after {
+        content: "";
+        background: url('imagens/lula.png') center center no-repeat; 
+        background-size: 50px;
+        position: absolute;
+        top: 200px;
+        left: -300px;
+        right: 0;
+        bottom: 0;
+        border-radius: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Bob Esponja</h1>
+    <div id="conteudo"></div>
+    <div class="bob"></div>
+    <div class="siriqueijo"></div>
+    <div class="patrick"></div>
+    <div class="lula"></div>
+
+</body>
+</html>
