@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio13</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1{
+            text-align: center;
+            margin: 20px;
+        }
+
+        form{
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.315);
+        }
+        label{
+            font-weight: bold;
+            display: block;
+            margin-bottom: 6px;
+        }
+        input[type="text"],
+        input[type="email"],
+
+        textarea{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+        }
+
+        textarea{
+            resize:vertical;
+        }
+
+        button[type="submit"]{
+            background-color: #007bff;
+            color: white;
+            border:none;
+            border-radius: 3px;
+            padding: 12px 24px;
+            cursor: pointer;
+        }
+        button [type="submit"]:hover{
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhe conosco</h1>  
+    
+    <form action="processar.php"method="post">
+        <label for="name">Nome Completo</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+        <label for="endereco">Endereço</label>
+        <input type="text" id="endereco" name="endereco" placeholder="Seu bairro e Cidade" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email"id="email" name="email" placeholder="Seu email" required>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" name="cpf" id="cpf" placeholder="Seu CPF" required pattern="\d{3}.\d{3}.\d{3}.\d{2}" title="Digite um CPF válido (ex:123.456.789-01)">
+    
+        <label for="data_nascimento">Data de nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" required>
+        <option value= "Mascuilino">Masculino</option>
+        <option value= "Feminino">Feminino</option>
+        <option value= "Outro">Outro</option>
+        </select>
+
+        <label for="interesses">Interesses:</label>
+        <input type="checkbox" id="interesses" name="interesses" value="esportes" ><strong>Esportes</strong>
+        <input type="checkbox" id="interesses" name="interesses" value="tecnologia" ><strong>Tecnologia</strong>
+        <input type="checkbox" id="interesses" name="interesses" value="viagens" ><strong>Viagens</strong>
+        <input type="checkbox" id="interesses" name="interesses" value="outros" ><strong>Outros</strong>
+
+        <label for="saber">Como ficou sabendo no site?</label>
+        <input type="radio" id="saber" value="amigos" ><strong>amigos</strong>
+        <input type="radio" id="saber" value="pesquisa" ><strong>pesquisa</strong>
+        <input type="radio" id="saber" value="outros" ><strong>outros</strong>
+
+        <label for="curriculo">Carregar currículo (pdf ou word)</label>
+        <input type="file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx"required>
+
+        <button type="submit">Enviar</button>
+    
+    </form>
+</body>
+</html>
