@@ -141,7 +141,7 @@ main img.pequena {
     display: block; 
 }
 
-dov.video{
+div.video{
     background-color: var(--cor5);
     margin: 0-10px 30px-20px;
     padding: 20px;
